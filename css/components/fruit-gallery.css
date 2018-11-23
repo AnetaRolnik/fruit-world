@@ -1,0 +1,50 @@
+.fruit-gallery .container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.fruit-gallery-article {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.fruit-gallery-img {
+    width: 100%;
+}
+
+.fruit-gallery-title {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.fruit-gallery-title::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media(min-width: 540px) {
+    .fruit-gallery .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .fruit-gallery-article {
+        width: 48%;
+    }
+}
+
+@media(min-width: 720px) {
+    .fruit-gallery-article {
+        width: 23%;
+    }
+}

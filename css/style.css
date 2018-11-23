@@ -1,0 +1,9 @@
+@import "./partials/normalize.css";
+
+@import "./components/layout.css";
+@import "./components/main-header.css";
+@import "./components/hero.css";
+@import "./components/fruit-description.css";
+@import "./components/fruit-variety.css";
+@import "./components/fruit-gallery.css";
+@import "./components/main-footer.css";

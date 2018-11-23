@@ -1,0 +1,146 @@
+.main-footer {
+    margin-top: 20px;
+    background-color: #eee;
+}
+
+.main-footer .container {
+    padding: 20px 20px;
+}
+
+.main-footer .container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding-top: 20px;
+}
+
+.main-footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-footer-list-elem {
+    padding: 0 10px 20px 0;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.main-footer-list-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-footer-list-link:hover {
+    color: black;
+}
+
+#coverDiv {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-contact {
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px 0 0;
+}
+
+.main-footer-logo {
+    max-width: 40px;
+    height: auto;
+}
+
+.main-footer-copyright {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+@media(min-width: 540px) {
+    .main-footer .container {
+        padding: 20px 60px;
+    }
+
+    .main-footer-list-elem {
+        padding: 0 15px 20px 0;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .main-footer-contact {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 720px) {
+    .main-footer .container>div {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-footer-list {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .main-footer-list::after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background: #ccc;
+        position: absolute;
+        top: 0;
+        right: -10px;
+    }
+
+    .main-footer-list-elem {
+        padding: 0 0 20px;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .main-footer-contact {
+        position: relative;
+        padding-top: 0;
+    }
+
+    .main-footer-contact::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+    }
+}
+
+@media(min-width: 960px) {
+    .main-footer-list::after {
+        right: -30px;
+    }
+
+    .main-footer-list-elem {
+        font-size: 16px;
+    }
+
+    .main-footer-contact {
+        font-size: 20px;
+    }
+
+    .main-footer-contact::after {
+        bottom: -40px;
+    }
+
+    .main-footer-logo {
+        max-width: 50px;
+    }
+}

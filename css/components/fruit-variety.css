@@ -1,0 +1,177 @@
+/*general*/
+.fruit-variety .container {
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+/*header*/
+.fruit-variety-title {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*articles*/
+.fruit-variety-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.fruit-variety-img {
+    width: 100%;
+    height: 1000%;
+}
+
+#cherriesImg {
+    position: relative;
+    width: 100%;
+}
+
+#cherriesImg::after {
+    display: block;
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0, rgba(238, 238, 238, 0.3) 45%, rgba(238, 238, 238, 0.3) 55%, rgba(0, 0, 0, 0.2) 100%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+}
+
+#cherriesImg img {
+    width: 100%;
+}
+
+.fruit-variety-content {
+    width: 100%;
+    text-align: left;
+}
+
+.fruit-variety-subtitle {
+    font-weight: 400;
+    margin: 10px 0 10px;
+}
+
+.fruit-variety-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px 0 10px;
+}
+
+/*table*/
+.fruit-variety-table {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.fruit-variety-table tr,
+.fruit-variety-table td,
+.fruit-variety-table th {
+    display: block;
+}
+
+.fruit-variety-table thead {
+    display: none;
+}
+
+.fruit-variety-table td {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.fruit-variety-table td::before {
+    display: inline-block;
+    content: attr(data-title) ":\00a0";
+    font-weight: bold;
+}
+
+.fruit-variety-table tr {
+    padding: 10px 0;
+    border: 1px solid #333;
+}
+
+.fruit-variety-table th {
+    font-size: 24px;
+}
+
+@media(min-width: 540px) {
+    /*articles*/
+    .fruit-variety-article {
+        flex-direction: row;
+    }
+
+    .fruit-variety-img {
+        width: 50%;
+        height: 50%;
+    }
+
+    #cherriesImg::after {
+        height: 220px;
+    }
+
+    #cherriesImg {
+        width: 50%;
+    }
+
+    .fruit-variety-content {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .fruit-variety-subtitle {
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 720px) {
+    /*articles*/
+    .fruit-variety-subtitle {
+        margin-top: 20px;
+    }
+
+    .fruit-variety-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    #cherriesImg::after {
+        height: 100%;
+    }
+
+    /*table*/
+    .fruit-variety-table {
+        margin-top: 60px;
+        border-collapse: collapse;
+    }
+
+    .fruit-variety-table thead {
+       display: table-header-group;
+    }
+
+    .fruit-variety-table tr {
+        display: table-row;
+    }
+
+    .fruit-variety-table th,
+    .fruit-variety-table td {
+        border: 1px solid #333;
+        vertical-align: top;
+        padding: 15px 20px 15px;
+        display: table-cell;
+    }
+
+    .fruit-variety-table td[data-title]:before {
+        display: none;
+    }
+
+    .lp {
+        width: 4%;
+    }
+
+    .nameFruit, .speciesFruit {
+        width: 18%;
+    }
+}
+
+
+

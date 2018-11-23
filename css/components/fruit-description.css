@@ -1,0 +1,72 @@
+.fruit-description .container {
+    margin-top: 40px;
+    padding: 0 15px;
+}
+
+.fruit-description-title {
+    text-align: center;
+    font-weight: 400;
+}
+
+.fruit-description-text {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#firstDescription {
+    position: relative;
+    padding-top: 20px;
+}
+
+#firstDescription::after {
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.fruit-description-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.fruit-description-img::after {
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.fruit-description-img img {
+    width: 48%;
+    height: 48%;
+}
+
+@media(min-width: 540px) {
+    .fruit-description .container {
+        padding: 0 60px;
+    }
+
+    .fruit-description-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media(min-width: 720px) {
+    .fruit-description-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
